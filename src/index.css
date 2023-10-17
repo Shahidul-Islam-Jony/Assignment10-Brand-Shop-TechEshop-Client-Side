@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 a.active{
-    color:green;
+    color:purple;
     font-weight: bold;
     text-decoration: underline;
 }
