@@ -7,3 +7,10 @@ a.active{
     font-weight: bold;
     text-decoration: underline;
 }
+
+.gradient{
+    background-image: linear-gradient(to right,red,blue);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
