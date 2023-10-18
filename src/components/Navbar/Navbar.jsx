@@ -9,7 +9,7 @@ const Navbar = () => {
         <NavLink to="/myCart">My Cart</NavLink>
     </div>
     return (
-        <div className="w-11/12 mx-auto bg-blue-400">
+        <div className="w-11/12 mx-auto bg-blue-400 rounded-lg">
             <div className="navbar relative z-40 bg-transparent bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
