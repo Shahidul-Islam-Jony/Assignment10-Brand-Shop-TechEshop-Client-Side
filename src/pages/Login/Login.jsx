@@ -1,15 +1,31 @@
+import { useContext } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../provider/AuthProvider';
+import swal from 'sweetalert';
 
 const Login = () => {
+
+    const {login,user} = useContext(AuthContext);
 
     const handleLogin = e =>{
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email,password);
+        // console.log(email,password);
+        // Login user
+        login(email,password)
+        .then(res=>{
+            console.log(res);
+            swal("Done!", "Login successful!", "success");
+        })
+        .catch(error=>{
+            swal(`"Wrong!", "User login failed!", "error" ${error}`)
+        })
     }
+
+    console.log(user);
 
     return (
         <div>

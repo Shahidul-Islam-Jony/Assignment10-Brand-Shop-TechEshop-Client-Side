@@ -1,16 +1,26 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
+import swal from 'sweetalert';
 
 // TechEshop
 const Navbar = () => {
+    const { user, logout } = useContext(AuthContext);
 
     const links = <div className="flex flex-col md:flex-row gap-4 md:gap-8 md:text-xl font-semibold text-white">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/addProduct">Add Product</NavLink>
         <NavLink to="/myCart">My Cart</NavLink>
     </div>
+
+    const handleLogout = () => {
+        logout();
+        swal("Done!", "Logout successful!", "success");
+    }
+
     return (
         <div className="w-11/12 mx-auto bg-blue-400 rounded-lg">
-            <div className="navbar relative z-40 bg-transparent bg-base-100">
+            <div className="navbar relative z-40 bg-transparent py-0 bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -21,7 +31,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex items-center gap-2">
-                        <img className="w-10 h-10 md:w-24 md:h-20 rounded-full" src="TechEshop2.png"/>
+                        <img className="w-10 h-10 md:w-24 md:h-20 rounded-full" src="TechEshop2.png" />
                         <h2 className="text-xl md:text-3xl font-bold text-white">TechEshop</h2>
                     </div>
                 </div>
@@ -31,7 +41,16 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to="/login" className="btn btn-outline text-white font-bold md:px-8 capitalize">Login</Link>
+                    <div>
+                        {
+                            user ? <div className="flex items-center gap-3">
+                                <p className="text-xl font-bold gradient">{user.displayName}</p>
+                                <img src={user.photoURL} className="w-10 h-10 rounded-full" alt="" />
+                                <button onClick={handleLogout} className="btn btn-outline text-white font-bold md:px-6 capitalize">Logout</button>
+                            </div> :
+                                <Link to="/login" className="btn btn-outline text-white font-bold md:px-8 capitalize">Login</Link>
+                        }
+                    </div>
                 </div>
             </div>
         </div>

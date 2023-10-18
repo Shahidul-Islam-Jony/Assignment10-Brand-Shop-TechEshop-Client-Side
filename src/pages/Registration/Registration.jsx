@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 
 const Registration = () => {
 
-    const { createUserByEmailAndPassword, updateUser } = useContext(AuthContext);
+    const { createUserByEmailAndPassword, updateUser,logout } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleRegister = e => {
@@ -18,13 +18,24 @@ const Registration = () => {
         const password = form.password.value;
         console.log(name, email, photo, password);
 
+        if(password.length < 6){
+            swal('Error',"Password must be six character or longer","error");
+            return;
+        }
+        else if(!/[A-Z]/.test(password)){
+            return swal('Error',"Password must be one captial letter","error");
+        }
+        else if(! /^(?=.*[~`!@#$%^&*()--+={}[\]|\\:;"'<>,.?/_₹]).*$/.test(password)){
+            return swal('Error',"Password should have one special character","error");
+        }
+
         createUserByEmailAndPassword(email, password)
             .then(res => {
                 console.log(res);
                 updateUser(name, photo)
                     .then(() => {
                         swal("Done!", "User created successfully!", "success");
-                        // logOut
+                        logout();
                         navigate('/login');
                     })
                     .catch(error => swal(`"Wrong!", "Something went Wrong!", "error" ${error}`))
