@@ -1,31 +1,35 @@
 import { useContext } from 'react';
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import swal from 'sweetalert';
 
 const Login = () => {
 
-    const {login,user} = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
+    const location = useLocation();
+    // console.log(location);
+    const navigate = useNavigate();
 
-    const handleLogin = e =>{
+    const handleLogin = e => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
         // console.log(email,password);
         // Login user
-        login(email,password)
-        .then(res=>{
-            console.log(res);
-            swal("Done!", "Login successful!", "success");
-        })
-        .catch(error=>{
-            swal(`"Wrong!", "User login failed!", "error" ${error}`)
-        })
+        login(email, password)
+            .then(res => {
+                console.log(res);
+                swal("Done!", "Login successful!", "success");
+                navigate(location?.state ? location.state : "/");
+            })
+            .catch(error => {
+                swal(`"Wrong!", "User login failed!", "error" ${error}`)
+            })
     }
 
-    console.log(user);
+    // console.log(user);
 
     return (
         <div>

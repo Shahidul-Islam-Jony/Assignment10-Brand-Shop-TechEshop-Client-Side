@@ -7,7 +7,7 @@ import swal from 'sweetalert';
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
 
-    const links = <div className="flex flex-col md:flex-row gap-4 md:gap-8 md:text-xl font-semibold text-white">
+    const links = <div className="flex flex-col lg:flex-row gap-4 md:gap-8 md:text-xl font-semibold text-white">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/addProduct">Add Product</NavLink>
         <NavLink to="/myCart">My Cart</NavLink>
@@ -43,9 +43,11 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <div>
                         {
-                            user ? <div className="flex items-center gap-3">
-                                <p className="text-xl font-bold gradient">{user.displayName}</p>
-                                <img src={user.photoURL} className="w-10 h-10 rounded-full" alt="" />
+                            user ? <div className="flex flex-col md:flex-row items-center md:gap-3">
+                                <div className="flex gap-2 py-2">
+                                    <p className="text-xl font-bold gradient">{user.displayName}</p>
+                                    <img src={user.photoURL} className="w-10 h-10 rounded-full" alt="" />
+                                </div>
                                 <button onClick={handleLogout} className="btn btn-outline text-white font-bold md:px-6 capitalize">Logout</button>
                             </div> :
                                 <Link to="/login" className="btn btn-outline text-white font-bold md:px-8 capitalize">Login</Link>

@@ -5,6 +5,7 @@ import AddProduct from "../pages/AddProduct/AddProduct";
 import Root from "../Layout/Root";
 import Login from "../pages/Login/Login";
 import Registration from "../pages/Registration/Registration";
+import PrivateRoutes from "./privateRoutes";
 
 
 const router = createBrowserRouter([
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/addProduct",
-                element: <AddProduct></AddProduct>
+                element:<PrivateRoutes><AddProduct></AddProduct></PrivateRoutes>
             },
             {
                 path:"/login",
