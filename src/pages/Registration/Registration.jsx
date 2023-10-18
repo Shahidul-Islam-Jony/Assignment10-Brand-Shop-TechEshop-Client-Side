@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
@@ -6,8 +6,10 @@ import swal from 'sweetalert';
 
 const Registration = () => {
 
-    const { createUserByEmailAndPassword, updateUser,logout } = useContext(AuthContext);
+    const { createUserByEmailAndPassword, updateUser, logout, googleSignIn } = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
+    // console.log(location);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -18,15 +20,15 @@ const Registration = () => {
         const password = form.password.value;
         console.log(name, email, photo, password);
 
-        if(password.length < 6){
-            swal('Error',"Password must be six character or longer","error");
+        if (password.length < 6) {
+            swal('Error', "Password must be six character or longer", "error");
             return;
         }
-        else if(!/[A-Z]/.test(password)){
-            return swal('Error',"Password must be one captial letter","error");
+        else if (!/[A-Z]/.test(password)) {
+            return swal('Error', "Password must be one captial letter", "error");
         }
-        else if(! /^(?=.*[~`!@#$%^&*()--+={}[\]|\\:;"'<>,.?/_₹]).*$/.test(password)){
-            return swal('Error',"Password should have one special character","error");
+        else if (! /^(?=.*[~`!@#$%^&*()--+={}[\]|\\:;"'<>,.?/_₹]).*$/.test(password)) {
+            return swal('Error', "Password should have one special character", "error");
         }
 
         createUserByEmailAndPassword(email, password)
@@ -44,8 +46,24 @@ const Registration = () => {
                 // console.error(error);
                 swal(`"Wrong!", "User creation failed!", "error" ${error}`)
             })
-
     }
+
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                console.log(result);
+                swal("Done!", "Login successful!", "success");
+                navigate(location?.state ? location.state : "/");
+            })
+            .catch(error => {
+                swal({
+                    title: "Error , login failed",
+                    text: `${error}`,
+                    icon: "error",
+                })
+            })
+    }
+
     return (
         <div>
             <div className="w-11/12 lg:w-[500px] border-2 border-blue-500 mx-auto my-14 rounded-lg py-10">
@@ -89,7 +107,7 @@ const Registration = () => {
                 </form>
                 <div className="w-4/5 mx-auto">
                     <p className="text-lg font-medium text-center my-3">Or, Register with</p>
-                    <button className="btn w-full capitalize btn-outline"><span className='text-2xl'><FcGoogle></FcGoogle></span>Google</button>
+                    <button onClick={handleGoogleSignIn} className="btn w-full capitalize btn-outline"><span className='text-2xl'><FcGoogle></FcGoogle></span>Google</button>
                 </div>
                 <div className='mt-7 w-4/5 mx-auto'>
                     <p className='text-xl font-medium'>Already have an account ? Please <Link to="/login" className='ml-4 font-bold text-blue-600 underline'>Login</Link></p>

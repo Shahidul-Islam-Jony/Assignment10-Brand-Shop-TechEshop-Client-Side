@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 
 const Login = () => {
 
-    const { login } = useContext(AuthContext);
+    const { login, googleSignIn } = useContext(AuthContext);
     const location = useLocation();
     // console.log(location);
     const navigate = useNavigate();
@@ -25,11 +25,30 @@ const Login = () => {
                 navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
-                swal(`"Wrong!", "User login failed!", "error" ${error}`)
+                swal({
+                    title: "Error , login failed",
+                    text: `${error}`,
+                    icon: "error",
+                })
             })
     }
-
     // console.log(user);
+
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                console.log(result);
+                swal("Done!", "Login successful!", "success");
+                navigate(location?.state ? location.state : "/");
+            })
+            .catch(error => {
+                swal({
+                    title: "Error , login failed",
+                    text: `${error}`,
+                    icon: "error",
+                })
+            })
+    }
 
     return (
         <div>
@@ -58,10 +77,10 @@ const Login = () => {
                 </form>
                 <div className="w-4/5 mx-auto">
                     <p className="text-lg font-medium text-center my-3">Or, Login with</p>
-                    <button className="btn w-full capitalize btn-outline"><span className='text-2xl'><FcGoogle></FcGoogle></span>Google</button>
+                    <button onClick={handleGoogleSignIn} className="btn w-full capitalize btn-outline"><span className='text-2xl'><FcGoogle></FcGoogle></span>Google</button>
                 </div>
                 <div className='mt-7 w-4/5 mx-auto'>
-                    <p className='text-xl font-medium'>No Account ? Please <Link to="/register" className='ml-4 font-bold text-blue-600 underline'>Register</Link></p>
+                    <p className='text-xl font-medium'>No Account ? Please <Link to="/register" state={location.state} className='ml-4 font-bold text-blue-600 underline'>Register</Link></p>
                 </div>
             </div>
         </div>

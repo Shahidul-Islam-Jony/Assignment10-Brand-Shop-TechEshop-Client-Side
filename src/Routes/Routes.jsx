@@ -7,29 +7,40 @@ import Login from "../pages/Login/Login";
 import Registration from "../pages/Registration/Registration";
 import PrivateRoutes from "./privateRoutes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import MyCart from "../pages/MyCart/MyCart";
+import Products from "../pages/Products/Products";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
-        errorElement:<ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
-                path:"/",
-                element:<Home></Home>,
-                loader:()=>fetch('brand.json')
+                path: "/",
+                element: <Home></Home>,
+                loader: () => fetch('/brand.json')
             },
             {
                 path: "/addProduct",
-                element:<PrivateRoutes><AddProduct></AddProduct></PrivateRoutes>
+                element: <PrivateRoutes><AddProduct></AddProduct></PrivateRoutes>
             },
             {
-                path:"/login",
-                element:<Login></Login>
-            },{
-                path:"/register",
-                element:<Registration></Registration>
+                path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path: "/register",
+                element: <Registration></Registration>
+            },
+            {
+                path: "/myCart",
+                element: <PrivateRoutes><MyCart></MyCart></PrivateRoutes>
+            },
+            {
+                path:"/products/:name",
+                element:<PrivateRoutes><Products></Products></PrivateRoutes>,
             }
 
         ]
