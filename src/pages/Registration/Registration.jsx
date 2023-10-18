@@ -1,22 +1,38 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import swal from 'sweetalert';
 
 const Registration = () => {
 
-    const {createUserByEmailAndPassword} = useContext(AuthContext);
+    const { createUserByEmailAndPassword, updateUser } = useContext(AuthContext);
+    const navigate = useNavigate();
 
-    const handleRegister = e=>{
+    const handleRegister = e => {
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
         const email = form.email.value;
         const photo = form.photo.value;
         const password = form.password.value;
-        console.log(name,email,photo,password);
+        console.log(name, email, photo, password);
 
-
+        createUserByEmailAndPassword(email, password)
+            .then(res => {
+                console.log(res);
+                updateUser(name, photo)
+                    .then(() => {
+                        swal("Done!", "User created successfully!", "success");
+                        // logOut
+                        navigate('/login');
+                    })
+                    .catch(error => swal(`"Wrong!", "Something went Wrong!", "error" ${error}`))
+            })
+            .catch(error => {
+                // console.error(error);
+                swal(`"Wrong!", "User creation failed!", "error" ${error}`)
+            })
 
     }
     return (
