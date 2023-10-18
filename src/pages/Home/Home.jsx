@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
+import Footer from "../../components/Footer/Footer";
 
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
