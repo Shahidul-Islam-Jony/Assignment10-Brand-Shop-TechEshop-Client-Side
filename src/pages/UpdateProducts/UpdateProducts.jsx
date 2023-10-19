@@ -4,7 +4,7 @@ import swal from 'sweetalert';
 const UpdateProducts = () => {
     
     const singleData = useLoaderData();
-    console.log(singleData);
+    // console.log(singleData);
 
     const {_id,photo,name,brand,type,price,rating} = singleData;
 
@@ -19,7 +19,7 @@ const UpdateProducts = () => {
         const rating = form.rating.value;
 
         const item = { photo, name, brand, type, price, rating };
-        console.log(item);
+        // console.log(item);
 
         fetch(`http://localhost:5000/update/${_id}`,{
             method:"PUT",
