@@ -72,12 +72,12 @@ const Login = () => {
                         </label>
                     </div>
                     <div className="w-4/5 mx-auto mt-6">
-                        <input type="submit" value="Login" className="btn bg-[#FF3811] w-full capitalize text-white" />
+                        <input type="submit" value="Login" className="btn bg-[#FF3811] w-full capitalize text-xl text-white" />
                     </div>
                 </form>
                 <div className="w-4/5 mx-auto">
                     <p className="text-lg font-medium text-center my-3">Or, Login with</p>
-                    <button onClick={handleGoogleSignIn} className="btn w-full capitalize btn-outline"><span className='text-2xl'><FcGoogle></FcGoogle></span>Google</button>
+                    <button onClick={handleGoogleSignIn} className="btn w-full text-xl capitalize btn-outline"><span className='text-3xl'><FcGoogle></FcGoogle></span>Google</button>
                 </div>
                 <div className='mt-7 w-4/5 mx-auto'>
                     <p className='text-xl font-medium'>No Account ? Please <Link to="/register" state={location.state} className='ml-4 font-bold text-blue-600 underline'>Register</Link></p>

@@ -8,7 +8,7 @@ const Banner = () => {
                 <div className="hero-content mt-28 md:mt-0 text-center text-neutral-content">
                     <div className="">
                         <h1 className="mb-5 text-5xl font-bold">Welcome to TechEshop</h1>
-                        <p className="mb-5">You can choose your product and buy from our TechEshop</p>
+                        <p className="mb-5 text-lg">You can choose your product and buy from our TechEshop</p>
                     </div>
                 </div>
             </div>

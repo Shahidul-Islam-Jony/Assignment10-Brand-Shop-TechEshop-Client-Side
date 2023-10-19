@@ -102,12 +102,12 @@ const Registration = () => {
                         </label>
                     </div>
                     <div className="w-4/5 mx-auto mt-6">
-                        <input type="submit" value="Register" className="btn bg-[#FF3811] w-full capitalize text-white" />
+                        <input type="submit" value="Register" className="btn bg-[#FF3811] text-xl w-full capitalize text-white" />
                     </div>
                 </form>
                 <div className="w-4/5 mx-auto">
                     <p className="text-lg font-medium text-center my-3">Or, Register with</p>
-                    <button onClick={handleGoogleSignIn} className="btn w-full capitalize btn-outline"><span className='text-2xl'><FcGoogle></FcGoogle></span>Google</button>
+                    <button onClick={handleGoogleSignIn} className="btn w-full capitalize text-xl btn-outline"><span className='text-2xl'><FcGoogle></FcGoogle></span>Google</button>
                 </div>
                 <div className='mt-7 w-4/5 mx-auto'>
                     <p className='text-xl font-medium'>Already have an account ? Please <Link to="/login" className='ml-4 font-bold text-blue-600 underline'>Login</Link></p>

@@ -22,7 +22,7 @@ const Products = () => {
                     data.length !== 0 ? data.map(singleData => <div key={singleData._id}>
 
                         <div className="card bg-base-100 shadow-xl">
-                            <figure><img src={singleData.photo} className="h-96 w-full" alt={singleData.name} /></figure>
+                            <figure><img src={singleData.photo} className="h-72 md:h-96 w-full" alt={singleData.name} /></figure>
                             <div className="card-body">
                                 <h2 className="card-title text-4xl font-bold">Name: {singleData.name}</h2>
                                 <h2 className="card-title text-3xl font-bold">Brand: {singleData.brand}</h2>

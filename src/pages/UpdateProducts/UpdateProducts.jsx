@@ -41,8 +41,8 @@ const UpdateProducts = () => {
                 <h2 className="text-3xl font-bold text-center mb-6">Update Products</h2>
                 <form onSubmit={handleUpdateProducts}>
                     <div className="w-4/5 mx-auto">
-                        <div className="flex gap-7">
-                            <div className="form-control w-1/2">
+                        <div className="flex flex-col md:flex-row gap-7">
+                            <div className="form-control w-full md:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-xl font-medium">Image</span>
                                 </label>
@@ -50,7 +50,7 @@ const UpdateProducts = () => {
                                     <input type="text" placeholder="Image URL" name="photo" className="input w-full input-bordered" defaultValue={photo} />
                                 </label>
                             </div>
-                            <div className="form-control w-1/2">
+                            <div className="form-control w-full md:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-xl font-medium">Name</span>
                                 </label>
@@ -60,8 +60,8 @@ const UpdateProducts = () => {
                             </div>
                         </div>
 
-                        <div className="flex gap-7">
-                            <div className="form-control w-1/2">
+                        <div className="flex flex-col md:flex-row gap-7">
+                            <div className="form-control w-full md:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-xl font-medium">Brand Name</span>
                                 </label>
@@ -76,7 +76,7 @@ const UpdateProducts = () => {
                                     </select>
                                 </label>
                             </div>
-                            <div className="form-control w-1/2">
+                            <div className="form-control w-full md:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-xl font-medium">Type</span>
                                 </label>
@@ -86,8 +86,8 @@ const UpdateProducts = () => {
                             </div>
                         </div>
 
-                        <div className="flex gap-7">
-                            <div className="form-control w-1/2">
+                        <div className="flex flex-col md:flex-row gap-7">
+                            <div className="form-control w-full md:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-xl font-medium">Price</span>
                                 </label>
@@ -95,7 +95,7 @@ const UpdateProducts = () => {
                                     <input type="text" placeholder="Price" name="price" className="input w-full input-bordered" defaultValue={price} />
                                 </label>
                             </div>
-                            <div className="form-control  w-1/2">
+                            <div className="form-control w-full md:w-1/2">
                                 <label className="label">
                                     <span className="label-text text-xl font-medium">Rating</span>
                                 </label>
@@ -111,7 +111,7 @@ const UpdateProducts = () => {
                             </div>
                         </div>
 
-                        <input type="submit" value="Submit" className="btn bg-[#FF3811] w-full mt-8 text-white capitalize" />
+                        <input type="submit" value="Submit" className="btn bg-[#FF3811] text-xl w-full mt-8 text-white capitalize" />
                     </div>
                 </form>
             </div>

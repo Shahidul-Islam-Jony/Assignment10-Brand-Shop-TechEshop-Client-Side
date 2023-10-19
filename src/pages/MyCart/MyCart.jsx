@@ -8,7 +8,7 @@ const MyCart = () => {
     const loadedData = useLoaderData();
     // console.log(loadedData);
     const [items,setItems] = useState(loadedData);
-    console.log(items);
+    // console.log(items);
 
     const handleDelete = id => {
         fetch(`http://localhost:5000/carts/${id}`,{
@@ -30,7 +30,7 @@ const MyCart = () => {
             {
                 items.length !== 0 ? items.map(item => <div key={item._id}>
                     <div className="w-11/12 mx-auto my-16">
-                        <div className="flex gap-28">
+                        <div className="flex flex-col gap-10 lg:flex-row lg:gap-28">
                             <img className="h-52 w-96 rounded-md" src={item.photo} alt={name} />
                             <div className="">
                                 <h2 className="text-5xl font-bold">Brand: {item.brand}</h2>
