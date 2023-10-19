@@ -41,7 +41,7 @@ const Products = () => {
                                 </div>
                                 <div className="flex gap-4 justify-between">
                                     <Link className="btn btn-primary w-1/2">Details</Link>
-                                    <Link className="btn btn-primary w-1/2">Update</Link>
+                                    <Link to={`/update/${singleData._id}`} className="btn btn-primary w-1/2">Update</Link>
                                 </div>
                             </div>
                         </div>
