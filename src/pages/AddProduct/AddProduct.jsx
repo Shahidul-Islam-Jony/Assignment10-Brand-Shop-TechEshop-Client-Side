@@ -1,7 +1,8 @@
+import swal from 'sweetalert';
 
 const AddProduct = () => {
 
-    const handleAdd = e =>{
+    const handleAdd = e => {
         e.preventDefault();
         const form = e.target;
         const photo = form.photo.value;
@@ -12,21 +13,22 @@ const AddProduct = () => {
         const rating = form.rating.value;
         const description = form.description.value;
 
-        const item = {photo,name,brand,type,price,rating,description};
+        const item = { photo, name, brand, type, price, rating, description };
         console.log(item);
 
-        fetch('http://localhost:5000/products',{
-            method:"POST",
-            headers:{
+        fetch('http://localhost:5000/products', {
+            method: "POST",
+            headers: {
                 "Content-Type": "application/json",
             },
-            body:JSON.stringify(item)
+            body: JSON.stringify(item)
         })
-        .then(res=>res.json())
-        .then(data=>{
-            console.log(data);
-            form.reset();
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                swal("Done!", "Product added successful!", "success");
+                form.reset();
+            })
 
     }
 
@@ -60,7 +62,14 @@ const AddProduct = () => {
                                 <span className="label-text text-xl font-medium">Brand Name</span>
                             </label>
                             <label className="">
-                                <input type="text" placeholder="Brand Name" name="brand" className="input w-full input-bordered" />
+                                <select className='input w-full font-semibold' name='brand'>
+                                    <option value="Apple">Apple</option>
+                                    <option value="Samsung">Samsung</option>
+                                    <option value="Sony">Sony</option>
+                                    <option value="Google">Google</option>
+                                    <option value="Intel">Intel</option>
+                                    <option value="Microsoft">Microsoft</option>
+                                </select>
                             </label>
                         </div>
                         <div className="form-control w-1/2">
@@ -87,7 +96,13 @@ const AddProduct = () => {
                                 <span className="label-text text-xl font-medium">Rating</span>
                             </label>
                             <label className="">
-                                <input type="number" name="rating" min="0" max="5" className="input w-full input-bordered" />
+                                <select className='input w-full font-medium' name='rating'>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
                             </label>
                         </div>
                     </div>

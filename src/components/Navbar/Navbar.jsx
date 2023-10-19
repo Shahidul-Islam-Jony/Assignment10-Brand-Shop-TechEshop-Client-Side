@@ -31,8 +31,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex items-center gap-2">
-                        <img className="w-10 h-10 md:w-24 md:h-20 rounded-full" src="TechEshop2.png" />
-                        <h2 className="text-xl md:text-3xl font-bold text-white">TechEshop</h2>
+                        <img className="w-10 h-10 md:w-24 md:h-20 rounded-full" src="/TechEshop2.png" />
+                        <h2 className="text-xl md:text-3xl font-bold text-white gradient">TechEshop</h2>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
