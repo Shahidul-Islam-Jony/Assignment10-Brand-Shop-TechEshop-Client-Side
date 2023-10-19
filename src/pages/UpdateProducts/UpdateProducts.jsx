@@ -1,11 +1,12 @@
 import { useLoaderData } from "react-router-dom";
+import swal from 'sweetalert';
 
 const UpdateProducts = () => {
     
     const singleData = useLoaderData();
     console.log(singleData);
 
-    const {photo,name,brand,type,price,rating} = singleData;
+    const {_id,photo,name,brand,type,price,rating} = singleData;
 
     const handleUpdateProducts = e => {
         e.preventDefault();
@@ -16,14 +17,22 @@ const UpdateProducts = () => {
         const type = form.type.value;
         const price = form.price.value;
         const rating = form.rating.value;
-        const description = form.description.value;
 
-        const item = { photo, name, brand, type, price, rating, description };
+        const item = { photo, name, brand, type, price, rating };
         console.log(item);
 
-
-
-      
+        fetch(`http://localhost:5000/update/${_id}`,{
+            method:"PUT",
+            headers:{
+                "Content-Type":"application/json",
+            },
+            body:JSON.stringify(item),
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            swal("Done!", "Update successful!", "success");
+            console.log(data);
+        })
     }
 
     return (

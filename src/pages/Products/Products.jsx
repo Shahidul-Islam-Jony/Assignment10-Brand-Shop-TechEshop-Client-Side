@@ -14,10 +14,12 @@ const Products = () => {
 
     return (
         <div className="w-11/12 mx-auto">
-            <Slider data={data}></Slider>
-            <div className="grid grid-cols-2 gap-4 mt-16">
+            {
+                data.length !==0 && <Slider data={data}></Slider>
+            }
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-16">
                 {
-                    data && data.map(singleData => <div key={singleData._id}>
+                    data.length !== 0 ? data.map(singleData => <div key={singleData._id}>
 
                         <div className="card bg-base-100 shadow-xl">
                             <figure><img src={singleData.photo} className="h-96 w-full" alt={singleData.name} /></figure>
@@ -45,8 +47,11 @@ const Products = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>)
+                    :
+                    <div className="h-72">
+                        <h2 className="text-center mt-24 font-bold text-4xl">Products not available for this brand</h2>
+                    </div>
                 }
             </div>
 
