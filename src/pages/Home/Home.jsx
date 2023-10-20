@@ -2,6 +2,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
 import LatestProducts from "../../components/LatestProducts/LatestProducts";
+import FeaturedCategory from "../../components/FeaturedCategory/FeaturedCategory";
 
 
 const Home = () => {
@@ -28,8 +29,7 @@ const Home = () => {
                 </div>
             </div>
             <LatestProducts></LatestProducts>
-
-            
+            <FeaturedCategory></FeaturedCategory>
             <Footer></Footer>
         </div>
     );
