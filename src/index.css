@@ -14,3 +14,7 @@ a.active{
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+.dark{
+    @apply bg-gray-500;
+}

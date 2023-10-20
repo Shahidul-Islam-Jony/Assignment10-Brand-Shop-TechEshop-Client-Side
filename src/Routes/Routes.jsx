@@ -12,6 +12,7 @@ import Products from "../pages/Products/Products";
 import UpdateProducts from "../pages/UpdateProducts/UpdateProducts";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import LatestProductDetails from "../components/LatestProductDetails/LatestProductDetails";
+import CategoryItems from "../components/CategoryItems/CategoryItems";
 
 
 const router = createBrowserRouter([
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
                 path:"/latestProductDetails/:name",
                 element:<LatestProductDetails></LatestProductDetails>,
                 loader:()=>fetch('/latestProducts.json')
+            },
+            {
+                path:"/category/:name",
+                element:<CategoryItems></CategoryItems>
             }
 
         ]

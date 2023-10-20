@@ -13,51 +13,51 @@ const FeaturedCategory = () => {
                 <p className="text-xl text-center font-medium">Get Your Desired Product from Featured Category!</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-4/5 gap-10 mx-auto'>
-                <Link>
+                <Link to="/category/phone">
                     <div className='h-36 w-56 flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><FaMobileAlt></FaMobileAlt></p>
                         <p className='text-xl font-medium'>Phone</p>
                     </div>
                 </Link>
                 
-                <Link>
+                <Link to="/category/laptop">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><FaLaptopCode></FaLaptopCode></p>
                         <p className='text-xl font-medium'>Laptop</p>
                     </div>
                 </Link>
-                <Link>
+                <Link to="/category/laptopBattery">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><FaCarBattery></FaCarBattery></p>
                         <p className='text-xl font-medium'>Laptop Battery</p>
                     </div>
                 </Link>
 
-                <Link>
+                <Link to="/category/monitor">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><GrMonitor></GrMonitor></p>
                         <p className='text-xl font-medium'>TV/Monitor</p>
                     </div>
                 </Link>
-                <Link>
+                <Link to="/category/printer">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><BsPrinter></BsPrinter></p>
                         <p className='text-xl font-medium'>Printer</p>
                     </div>
                 </Link>
-                <Link>
+                <Link to="/category/headphone">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><ImHeadphones></ImHeadphones></p>
                         <p className='text-xl font-medium'>Headphone</p>
                     </div>
                 </Link>
-                <Link>
+                <Link to="/category/smartWatch">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><IoWatchOutline></IoWatchOutline></p>
                         <p className='text-xl font-medium'>Smart watch</p>
                     </div>
                 </Link>
-                <Link>
+                <Link to="/category/camera">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><BsCamera></BsCamera></p>
                         <p className='text-xl font-medium'>Camera</p>

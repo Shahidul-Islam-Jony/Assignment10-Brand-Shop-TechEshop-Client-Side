@@ -12,6 +12,7 @@ const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
 
     // create user with email and password
     const createUserByEmailAndPassword = (email, password) => {
@@ -31,9 +32,9 @@ const AuthProvider = ({ children }) => {
         return signInWithEmailAndPassword(auth, email, password);
     }
     // Google sign in
-    const googleSignIn = () =>{
+    const googleSignIn = () => {
         setLoading(true);
-        return signInWithPopup(auth,provider);
+        return signInWithPopup(auth, provider);
     }
 
     // sign Out user
@@ -54,7 +55,19 @@ const AuthProvider = ({ children }) => {
     }, [])
 
 
-    const authInfo = { user, createUserByEmailAndPassword, loading, setUser, updateUser, login, logout,googleSignIn };
+    const authInfo = {
+        user,
+        createUserByEmailAndPassword,
+        loading,
+        setUser,
+        updateUser,
+        login,
+        logout,
+        googleSignIn,
+        darkMode,
+        setDarkMode
+    };
+    
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

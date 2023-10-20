@@ -1,0 +1,226 @@
+[
+    {
+        "name": "iPhone 13 Pro",
+        "image": "iphone13pro.jpg",
+        "brand": "Apple",
+        "type": "phone",
+        "description": "The iPhone 13 Pro features a Super Retina XDR display, A15 Bionic chip, and advanced camera system."
+    },
+    {
+        "name": "Samsung Galaxy S21",
+        "image": "galaxys21.jpg",
+        "brand": "Samsung",
+        "type": "phone",
+        "description": "The Samsung Galaxy S21 is a flagship phone with a high-resolution display and powerful performance."
+    },
+    {
+        "name": "Google Pixel 6",
+        "image": "pixel6.jpg",
+        "brand": "Google",
+        "type": "phone",
+        "description": "The Google Pixel 6 offers exceptional camera capabilities and a clean Android experience."
+    },
+    {
+        "name": "OnePlus 9 Pro",
+        "image": "oneplus9pro.jpg",
+        "brand": "OnePlus",
+        "type": "phone",
+        "description": "The OnePlus 9 Pro boasts a fast refresh rate display and smooth performance."
+    },
+    {
+        "name": "Dell XPS 13",
+        "image": "xps13.jpg",
+        "brand": "Dell",
+        "type": "laptop",
+        "description": "The Dell XPS 13 is a premium ultrabook known for its compact design and high-resolution display."
+    },
+    {
+        "name": "MacBook Air",
+        "image": "macbookair.jpg",
+        "brand": "Apple",
+        "type": "laptop",
+        "description": "The MacBook Air is a thin and lightweight laptop with Apple's M1 chip for improved performance."
+    },
+    {
+        "name": "Lenovo ThinkPad X1 Carbon",
+        "image": "thinkpadx1.jpg",
+        "brand": "Lenovo",
+        "type": "laptop",
+        "description": "The ThinkPad X1 Carbon is a business-oriented ultrabook with a durable build and excellent keyboard."
+    },
+    {
+        "name": "HP Spectre x360",
+        "image": "spectrex360.jpg",
+        "brand": "HP",
+        "type": "laptop",
+        "description": "The HP Spectre x360 is a versatile 2-in-1 laptop with a sleek design and a touchscreen display."
+    },
+    {
+        "name": "Anker PowerCore 26800",
+        "image": "powercore26800.jpg",
+        "brand": "Anker",
+        "type": "battery",
+        "description": "The Anker PowerCore 26800 is a high-capacity power bank for charging laptops and devices on the go."
+    },
+    {
+        "name": "RAVPower 20000mAh Power Bank",
+        "image": "ravpower20000.jpg",
+        "brand": "RAVPower",
+        "type": "battery",
+        "description": "The RAVPower 20000mAh power bank offers fast charging and multiple device compatibility."
+    },
+    {
+        "name": "Samsung EB-BN910BBE Battery",
+        "image": "samsungbattery.jpg",
+        "brand": "Samsung",
+        "type": "battery",
+        "description": "The Samsung EB-BN910BBE is a replacement battery for compatible Samsung laptops."
+    },
+    {
+        "name": "Dell 97WH 6-Cell Battery",
+        "image": "dellbattery.jpg",
+        "brand": "Dell",
+        "type": "battery",
+        "description": "The Dell 97WH 6-Cell Battery is a genuine replacement battery for Dell laptops."
+    },
+    {
+        "name": "Dell Ultrasharp U2719D",
+        "image": "dellmonitor.jpg",
+        "brand": "Dell",
+        "type": "battery",
+        "description": "The Dell Ultrasharp U2719D is a high-resolution IPS monitor with excellent color accuracy."
+    },
+    {
+        "name": "LG 27GL83A-B",
+        "image": "lgmonitor.jpg",
+        "brand": "LG",
+        "type": "monitor",
+        "description": "The LG 27GL83A-B is a gaming monitor with a fast refresh rate and G-Sync compatibility."
+    },
+    {
+        "name": "ASUS ProArt PA329C",
+        "image": "asusmonitor.jpg",
+        "brand": "ASUS",
+        "type": "monitor",
+        "description": "The ASUS ProArt PA329C is a professional-grade 4K monitor for content creators."
+    },
+    {
+        "name": "BenQ GW2270",
+        "image": "benqmonitor.jpg",
+        "brand": "BenQ",
+        "type": "monitor",
+        "description": "The BenQ GW2270 is an affordable monitor with a high contrast ratio for multimedia use."
+    },
+    {
+        "name": "HP LaserJet Pro MFP M281fdw",
+        "image": "hplaserjet.jpg",
+        "brand": "HP",
+        "type": "printer",
+        "description": "The HP LaserJet Pro MFP M281fdw is a multifunction laser printer with wireless printing capabilities."
+    },
+    {
+        "name": "Epson EcoTank ET-4760",
+        "image": "epsonecotank.jpg",
+        "brand": "Epson",
+        "type": "printer",
+        "description": "The Epson EcoTank ET-4760 features refillable ink tanks for cost-effective printing."
+    },
+    {
+        "name": "Canon PIXMA MX922",
+        "image": "canonpixma.jpg",
+        "brand": "Canon",
+        "type": "printer",
+        "description": "The Canon PIXMA MX922 is a versatile all-in-one inkjet printer for home and office use."
+    },
+    {
+        "name": "Brother HL-L2380DW",
+        "image": "brotherprinter.jpg",
+        "brand": "Brother",
+        "type": "printer",
+        "description": "The Brother HL-L2380DW is a monochrome laser printer with wireless and duplex printing."
+    },
+    {
+        "name": "Sony WH-1000XM4",
+        "image": "sonyheadphones.jpg",
+        "brand": "Sony",
+        "type": "headphones",
+        "description": "The Sony WH-1000XM4 offers premium sound quality and noise-canceling technology."
+    },
+    {
+        "name": "Bose QuietComfort 35 II",
+        "image": "boseheadphones.jpg",
+        "brand": "Bose",
+        "type": "headphones",
+        "description": "The Bose QuietComfort 35 II is known for its comfort and noise cancellation."
+    },
+    {
+        "name": "Beats Solo Pro",
+        "image": "beatssolo.jpg",
+        "brand": "Beats",
+        "type": "headphones",
+        "description": "The Beats Solo Pro offers a sleek design and Apple's H1 chip for seamless connectivity."
+    },
+    {
+        "name": "Sennheiser HD 660 S",
+        "image": "sennheiserheadphones.jpg",
+        "brand": "Sennheiser",
+        "type": "headphones",
+        "description": "The Sennheiser HD 660 S provides high-quality sound for audiophiles."
+    },
+    {
+        "name": "Apple Watch Series 6",
+        "image": "applewatch.jpg",
+        "brand": "Apple",
+        "type": "smartwatch",
+        "description": "The Apple Watch Series 6 features a blood oxygen sensor, ECG, and Always-On Retina display."
+    },
+    {
+        "name": "Samsung Galaxy Watch 4",
+        "image": "galaxywatch.jpg",
+        "brand": "Samsung",
+        "type": "smartwatch",
+        "description": "The Samsung Galaxy Watch 4 offers health and fitness tracking and a variety of apps."
+    },
+    {
+        "name": "Fitbit Versa 3",
+        "image": "fitbitversa.jpg",
+        "brand": "Fitbit",
+        "type": "smartwatch",
+        "description": "The Fitbit Versa 3 is designed for fitness enthusiasts with GPS and heart rate monitoring."
+    },
+    {
+        "name": "Garmin Forerunner 945",
+        "image": "garminwatch.jpg",
+        "brand": "Garmin",
+        "type": "smartWatch",
+        "description": "The Garmin Forerunner 945 is built for serious athletes with advanced performance metrics."
+    },
+    {
+        "name": "Canon EOS 5D Mark IV",
+        "image": "canoncamera.jpg",
+        "brand": "Canon",
+        "type": "camera",
+        "description": "The Canon EOS 5D Mark IV is a professional-grade DSLR camera with high-resolution imaging."
+    },
+    {
+        "name": "Sony Alpha a7 III",
+        "image": "sonycamera.jpg",
+        "brand": "Sony",
+        "type": "camera",
+        "description": "The Sony Alpha a7 III is a versatile mirrorless camera with great low-light performance."
+    },
+    {
+        "name": "Nikon D7500",
+        "image": "nikoncamera.jpg",
+        "brand": "Nikon",
+        "type": "camera",
+        "description": "The Nikon D7500 is a mid-range DSLR camera with fast continuous shooting."
+    },
+    {
+        "name": "Panasonic Lumix GH5",
+        "image": "panasoniccamera.jpg",
+        "brand": "Panasonic",
+        "type": "camera",
+        "description": "The Panasonic Lumix GH5 is known for its video recording capabilities and versatility."
+    }
+]

@@ -33,94 +33,96 @@ const AddProduct = () => {
     }
 
     return (
-        <div className="w-11/12 mx-auto bg-[#F3F3F3] my-10 py-10 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-6">Add Your Products</h2>
-            <form onSubmit={handleAdd}>
-                <div className="w-4/5 mx-auto">
-                    <div className="flex flex-col md:flex-row gap-7">
-                        <div className="form-control w-full md:w-1/2">
-                            <label className="label">
-                                <span className="label-text text-xl font-medium">Image</span>
-                            </label>
-                            <label className="">
-                                <input type="text" placeholder="Image URL" name="photo" className="input w-full input-bordered" />
-                            </label>
+        <div className='pb-5'>
+            <div className="w-11/12 mx-auto bg-[#F3F3F3] my-10 py-10 rounded-lg">
+                <h2 className="text-3xl font-bold text-center mb-6">Add Your Products</h2>
+                <form onSubmit={handleAdd}>
+                    <div className="w-4/5 mx-auto">
+                        <div className="flex flex-col md:flex-row gap-7">
+                            <div className="form-control w-full md:w-1/2">
+                                <label className="label">
+                                    <span className="label-text text-xl font-medium">Image</span>
+                                </label>
+                                <label className="">
+                                    <input type="text" placeholder="Image URL" name="photo" className="input w-full input-bordered" />
+                                </label>
+                            </div>
+                            <div className="form-control w-full md:w-1/2">
+                                <label className="label">
+                                    <span className="label-text text-xl font-medium">Name</span>
+                                </label>
+                                <label className="">
+                                    <input type="text" placeholder="Product Name" name="name" className="input w-full input-bordered" />
+                                </label>
+                            </div>
                         </div>
-                        <div className="form-control w-full md:w-1/2">
-                            <label className="label">
-                                <span className="label-text text-xl font-medium">Name</span>
-                            </label>
-                            <label className="">
-                                <input type="text" placeholder="Product Name" name="name" className="input w-full input-bordered" />
-                            </label>
-                        </div>
-                    </div>
 
-                    <div className="flex flex-col md:flex-row gap-7">
-                        <div className="form-control w-full md:w-1/2">
-                            <label className="label">
-                                <span className="label-text text-xl font-medium">Brand Name</span>
-                            </label>
-                            <label className="">
-                                <select className='input w-full font-semibold' name='brand'>
-                                    <option value="Apple">Apple</option>
-                                    <option value="Samsung">Samsung</option>
-                                    <option value="Sony">Sony</option>
-                                    <option value="Google">Google</option>
-                                    <option value="Intel">Intel</option>
-                                    <option value="Microsoft">Microsoft</option>
-                                </select>
-                            </label>
+                        <div className="flex flex-col md:flex-row gap-7">
+                            <div className="form-control w-full md:w-1/2">
+                                <label className="label">
+                                    <span className="label-text text-xl font-medium">Brand Name</span>
+                                </label>
+                                <label className="">
+                                    <select className='input w-full font-semibold' name='brand'>
+                                        <option value="Apple">Apple</option>
+                                        <option value="Samsung">Samsung</option>
+                                        <option value="Sony">Sony</option>
+                                        <option value="Google">Google</option>
+                                        <option value="Intel">Intel</option>
+                                        <option value="Microsoft">Microsoft</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div className="form-control w-full md:w-1/2">
+                                <label className="label">
+                                    <span className="label-text text-xl font-medium">Type</span>
+                                </label>
+                                <label className="">
+                                    <input type="text" placeholder="Types of products" name="type" className="input w-full input-bordered" />
+                                </label>
+                            </div>
                         </div>
-                        <div className="form-control w-full md:w-1/2">
-                            <label className="label">
-                                <span className="label-text text-xl font-medium">Type</span>
-                            </label>
-                            <label className="">
-                                <input type="text" placeholder="Types of products" name="type" className="input w-full input-bordered" />
-                            </label>
-                        </div>
-                    </div>
 
-                    <div className="flex flex-col md:flex-row gap-7">
-                        <div className="form-control w-full md:w-1/2">
-                            <label className="label">
-                                <span className="label-text text-xl font-medium">Price</span>
-                            </label>
-                            <label className="">
-                                <input type="text" placeholder="Price" name="price" className="input w-full input-bordered" />
-                            </label>
+                        <div className="flex flex-col md:flex-row gap-7">
+                            <div className="form-control w-full md:w-1/2">
+                                <label className="label">
+                                    <span className="label-text text-xl font-medium">Price</span>
+                                </label>
+                                <label className="">
+                                    <input type="text" placeholder="Price" name="price" className="input w-full input-bordered" />
+                                </label>
+                            </div>
+                            <div className="form-control w-full md:w-1/2">
+                                <label className="label">
+                                    <span className="label-text text-xl font-medium">Rating</span>
+                                </label>
+                                <label className="">
+                                    <select className='input w-full font-medium' name='rating'>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </label>
+                            </div>
                         </div>
-                        <div className="form-control w-full md:w-1/2">
-                            <label className="label">
-                                <span className="label-text text-xl font-medium">Rating</span>
-                            </label>
-                            <label className="">
-                                <select className='input w-full font-medium' name='rating'>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </label>
-                        </div>
-                    </div>
 
-                    <div className="flex gap-7">
-                        <div className="form-control w-full">
-                            <label className="label">
-                                <span className="label-text text-xl font-medium">Short description</span>
-                            </label>
-                            <label className="">
-                                <input type="text" placeholder="Short description of products" name="description" className="input w-full input-bordered" />
-                            </label>
+                        <div className="flex gap-7">
+                            <div className="form-control w-full">
+                                <label className="label">
+                                    <span className="label-text text-xl font-medium">Short description</span>
+                                </label>
+                                <label className="">
+                                    <input type="text" placeholder="Short description of products" name="description" className="input w-full input-bordered" />
+                                </label>
+                            </div>
                         </div>
-                    </div>
 
-                    <input type="submit" value="Add" className="btn bg-[#FF3811] w-full mt-8 text-white text-xl capitalize" />
-                </div>
-            </form>
+                        <input type="submit" value="Add" className="btn bg-[#FF3811] w-full mt-8 text-white text-xl capitalize" />
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

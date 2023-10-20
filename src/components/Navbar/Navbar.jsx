@@ -5,7 +5,7 @@ import swal from 'sweetalert';
 
 // TechEshop
 const Navbar = () => {
-    const { user, logout } = useContext(AuthContext);
+    const { user, logout,darkMode,setDarkMode } = useContext(AuthContext);
 
     const links = <div className="flex flex-col lg:flex-row gap-4 md:gap-8 md:text-xl font-semibold text-white">
         <NavLink to="/">Home</NavLink>
@@ -18,8 +18,13 @@ const Navbar = () => {
         swal("Done!", "Logout successful!", "success");
     }
 
+    const handleDarkMode=()=>{
+        setDarkMode(!darkMode);
+    }
+    // console.log(darkMode);
+
     return (
-        <div className="w-11/12 mx-auto bg-blue-400 rounded-lg">
+        <div className={`w-11/12 mx-auto bg-blue-400 rounded-lg`}>
             <div className="navbar relative z-40 bg-transparent py-2 md:py-0 bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -30,9 +35,17 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <img className="w-10 h-10 md:w-24 md:h-20 rounded-full" src="/TechEshop2.png" />
-                        <h2 className="text-xl md:text-3xl font-bold text-white gradient">TechEshop</h2>
+                    <div className="flex flex-col lg:flex-row lg:gap-4 md:items-center">
+                        <div className="flex items-center gap-2">
+                            <img className="w-10 h-10 md:w-24 md:h-20 rounded-full" src="/TechEshop2.png" />
+                            <h2 className="text-xl md:text-3xl font-bold text-white gradient">TechEshop</h2>
+                        </div>
+                        <div className="form-control">
+                            <label onClick={handleDarkMode} className="label cursor-pointer">
+                                <input type="checkbox" className="toggle" />
+                                <span className="label-text font-bold">Dark mode</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
