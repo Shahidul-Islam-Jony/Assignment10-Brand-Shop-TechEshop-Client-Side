@@ -7,22 +7,22 @@ import { useState } from "react";
 const MyCart = () => {
     const loadedData = useLoaderData();
     // console.log(loadedData);
-    const [items,setItems] = useState(loadedData);
+    const [items, setItems] = useState(loadedData);
     // console.log(items);
 
     const handleDelete = id => {
-        fetch(`http://localhost:5000/carts/${id}`,{
-            method:"DELETE",
+        fetch(`http://localhost:5000/carts/${id}`, {
+            method: "DELETE",
         })
-        .then(res=>res.json())
-        .then(data=>{
-            console.log(data);
-            if(data.deletedCount > 0){
-                console.log('Hello');
-                const filteredData = items.filter(item=>item._id !==id);
-                setItems(filteredData);
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.deletedCount > 0) {
+                    console.log('Hello');
+                    const filteredData = items.filter(item => item._id !== id);
+                    setItems(filteredData);
+                }
+            })
     }
 
     return (
@@ -54,7 +54,9 @@ const MyCart = () => {
                     </div>
                 </div>)
                     :
-                    <div></div>
+                    <div className="mt-36 flex justify-center text-3xl font-bold">
+                        <h3>You have not added any products yet</h3>
+                    </div>
             }
         </div>
     );

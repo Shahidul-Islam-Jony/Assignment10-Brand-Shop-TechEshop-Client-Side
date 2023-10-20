@@ -1,0 +1,38 @@
+[
+    {
+        "name": "iPhone 15 Pro Max",
+        "brand": "Apple",
+        "image": "https://i.ibb.co/N9j1SpK/iphone-15-pro-max.webp",
+        "type": "Smartphone",
+        "price": "183000 tk",
+        "rating": 5,
+        "description": "The iPhone 15 Pro Max is a flagship smartphone from Apple, known for its premium design and performance. It boasts a stunning Super Retina XDR display, powered by the A15 Bionic chip, and features a versatile triple-camera system that captures stunning photos and videos in any lighting conditions. With its exceptional build quality and smooth user experience, the iPhone 15 Pro Max is a top choice for those seeking the best in mobile technology."
+    },    
+    {
+        "name": "Samsung Galaxy S21 Ultra",
+        "brand": "Samsung",
+        "image": "https://i.ibb.co/CzTVV9g/Samsung-Galaxy-S21-Ultra.webp",
+        "type": "Smartphone",
+        "price": "139999 tk",
+        "rating": 4,
+        "description": "The Samsung Galaxy S21 Ultra is the pinnacle of Samsung's smartphone innovation. It features a massive Dynamic AMOLED 2X display with an S Pen support, powered by the Exynos 2100 processor, ensuring lightning-fast performance. The quad-camera setup at the back, including a 108-megapixel sensor, delivers breathtaking photography. With 5G connectivity and an impressive battery life, the Galaxy S21 Ultra is a flagship device that pushes the boundaries of what a smartphone can do."
+    },    
+    {
+        "name": "Google Pixel 6 Pro",
+        "brand": "Google",
+        "image": "https://i.ibb.co/hHvt9GP/Google-Pixel-6-Pro.jpg",
+        "type": "Smartphone",
+        "price": "52000 tk",
+        "rating": 5,
+        "description": "The Google Pixel 6 Pro is Google's latest flagship Android smartphone. It boasts a high-refresh-rate OLED display that provides vibrant and sharp visuals. With Google's custom Tensor chip, it offers exceptional AI performance and camera capabilities. The camera system is a standout feature, capturing stunning photos and videos with ease. The Pixel 6 Pro offers a pure Android experience with timely software updates and is an excellent choice for photography enthusiasts and Android purists."
+    },    
+    {
+        "name": "Microsoft Surface Laptop 4",
+        "brand": "Microsoft",
+        "image": "https://i.ibb.co/m85Y3dT/Microsoft-Surface-Laptop-4.webp",
+        "type": "Laptop",
+        "price": "140000 tk",
+        "rating": 4,
+        "description": "The Microsoft Surface Laptop 4 is a premium ultrabook designed for professionals and students alike. It features a high-resolution PixelSense touchscreen display that's great for both work and entertainment. Powered by a range of Intel and AMD processors, it offers impressive performance and long-lasting battery life. The sleek and minimalistic design, along with the comfortable keyboard, makes it an ideal choice for productivity on the go. Whether you're working on documents, editing photos, or streaming content, the Surface Laptop 4 is up to the task."
+    }    
+]

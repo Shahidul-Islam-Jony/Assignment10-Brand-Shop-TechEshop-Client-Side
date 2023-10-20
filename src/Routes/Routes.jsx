@@ -11,6 +11,7 @@ import MyCart from "../pages/MyCart/MyCart";
 import Products from "../pages/Products/Products";
 import UpdateProducts from "../pages/UpdateProducts/UpdateProducts";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import LatestProductDetails from "../components/LatestProductDetails/LatestProductDetails";
 
 
 const router = createBrowserRouter([
@@ -55,6 +56,11 @@ const router = createBrowserRouter([
                 path: "/details/:id",
                 element: <PrivateRoutes><ProductDetails></ProductDetails></PrivateRoutes>,
                 loader:({params})=>fetch(`http://localhost:5000/update/${params.id}`)
+            },
+            {
+                path:"/latestProductDetails/:name",
+                element:<LatestProductDetails></LatestProductDetails>,
+                loader:()=>fetch('/latestProducts.json')
             }
 
         ]
