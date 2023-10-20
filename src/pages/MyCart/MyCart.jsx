@@ -11,7 +11,7 @@ const MyCart = () => {
     // console.log(items);
 
     const handleDelete = id => {
-        fetch(`http://localhost:5000/carts/${id}`, {
+        fetch(`https://assignment10-server-side-hgfxsjokh-shahidul-islams-projects.vercel.app/carts/${id}`, {
             method: "DELETE",
         })
             .then(res => res.json())
@@ -26,11 +26,11 @@ const MyCart = () => {
     }
 
     return (
-        <div>
+        <div className="py-16">
             {
                 items.length !== 0 ? items.map(item => <div key={item._id}>
-                    <div className="w-11/12 mx-auto my-16">
-                        <div className="flex flex-col gap-10 lg:flex-row lg:gap-28">
+                    <div className="w-11/12 mx-auto mb-4">
+                        <div className="flex flex-col bg-slate-200 py-2 lg:px-2 rounded-lg gap-10 lg:flex-row lg:gap-28">
                             <img className="h-52 w-96 rounded-md" src={item.photo} alt={name} />
                             <div className="">
                                 <h2 className="text-5xl font-bold">Brand: {item.brand}</h2>

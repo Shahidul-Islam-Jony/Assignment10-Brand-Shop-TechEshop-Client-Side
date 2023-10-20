@@ -1,24 +1,26 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const LatestProducts = () => {
     const [products, setProducts] = useState([]);
+    const {darkMode} = useContext(AuthContext);
 
     useEffect(() => {
         fetch("/latestProducts.json")
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 setProducts(data);
             })
     }, [])
 
-    console.log(products);
+    // console.log(products);
 
     return (
         <div className="w-11/12 mx-auto my-16">
             <div>
-                <h2 className="text-5xl text-center font-bold">Latest products of top brands</h2>
+                <h2 className={`text-5xl text-center font-bold ${darkMode?"text-white":"text-black"}`}>Latest products of top brands</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
                 {

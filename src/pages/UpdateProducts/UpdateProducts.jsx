@@ -21,7 +21,7 @@ const UpdateProducts = () => {
         const item = { photo, name, brand, type, price, rating };
         // console.log(item);
 
-        fetch(`http://localhost:5000/update/${_id}`,{
+        fetch(`https://assignment10-server-side-hgfxsjokh-shahidul-islams-projects.vercel.app/update/${_id}`,{
             method:"PUT",
             headers:{
                 "Content-Type":"application/json",

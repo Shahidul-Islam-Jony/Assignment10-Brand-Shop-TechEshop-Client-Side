@@ -11,7 +11,7 @@ const ProductDetails = () => {
 
     const handleAddToCart = () => {
         const item = { brand, description, name, photo, price, rating, };
-        fetch("http://localhost:5000/carts", {
+        fetch("https://assignment10-server-side-hgfxsjokh-shahidul-islams-projects.vercel.app/carts", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

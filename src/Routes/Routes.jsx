@@ -41,22 +41,22 @@ const router = createBrowserRouter([
             {
                 path: "/myCart",
                 element: <PrivateRoutes><MyCart></MyCart></PrivateRoutes>,
-                loader:()=>fetch('http://localhost:5000/carts')
+                loader:()=>fetch('https://assignment10-server-side-hgfxsjokh-shahidul-islams-projects.vercel.app/carts')
             },
             {
                 path: "/products/:brand",
                 element: <Products></Products>,
-                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.brand}`)
+                loader: ({ params }) => fetch(`https://assignment10-server-side-hgfxsjokh-shahidul-islams-projects.vercel.app/products/${params.brand}`)
             },
             {
                 path: "/update/:id",
                 element: <PrivateRoutes><UpdateProducts></UpdateProducts></PrivateRoutes>,
-                loader:({params})=>fetch(`http://localhost:5000/update/${params.id}`)
+                loader:({params})=>fetch(`https://assignment10-server-side-hgfxsjokh-shahidul-islams-projects.vercel.app/update/${params.id}`)
             },
             {
                 path: "/details/:id",
                 element: <PrivateRoutes><ProductDetails></ProductDetails></PrivateRoutes>,
-                loader:({params})=>fetch(`http://localhost:5000/update/${params.id}`)
+                loader:({params})=>fetch(`https://assignment10-server-side-hgfxsjokh-shahidul-islams-projects.vercel.app/update/${params.id}`)
             },
             {
                 path:"/latestProductDetails/:name",
@@ -65,7 +65,8 @@ const router = createBrowserRouter([
             },
             {
                 path:"/category/:name",
-                element:<CategoryItems></CategoryItems>
+                element:<CategoryItems></CategoryItems>,
+                loader:()=>fetch("/allCategory.json")
             }
 
         ]

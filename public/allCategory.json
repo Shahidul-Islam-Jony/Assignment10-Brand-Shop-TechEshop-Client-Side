@@ -1,224 +1,224 @@
 [
     {
-        "name": "iPhone 13 Pro",
-        "image": "iphone13pro.jpg",
+        "name": "iPhone 13 Pro max",
+        "image": "https://i.ibb.co/dk660xY/iphone13promax1.webp",
         "brand": "Apple",
         "type": "phone",
         "description": "The iPhone 13 Pro features a Super Retina XDR display, A15 Bionic chip, and advanced camera system."
     },
     {
         "name": "Samsung Galaxy S21",
-        "image": "galaxys21.jpg",
+        "image": "https://i.ibb.co/CzTVV9g/Samsung-Galaxy-S21-Ultra.webp",
         "brand": "Samsung",
         "type": "phone",
-        "description": "The Samsung Galaxy S21 is a flagship phone with a high-resolution display and powerful performance."
+        "description": "The Samsung Galaxy S21 is a flagship phone with a high-resolution display.."
     },
     {
-        "name": "Google Pixel 6",
-        "image": "pixel6.jpg",
+        "name": "Google Pixel 6 pro",
+        "image": "https://i.ibb.co/hHvt9GP/Google-Pixel-6-Pro.jpg",
         "brand": "Google",
         "type": "phone",
         "description": "The Google Pixel 6 offers exceptional camera capabilities and a clean Android experience."
     },
     {
         "name": "OnePlus 9 Pro",
-        "image": "oneplus9pro.jpg",
+        "image": "https://i.ibb.co/K2BqHrH/onePlus.jpg",
         "brand": "OnePlus",
         "type": "phone",
         "description": "The OnePlus 9 Pro boasts a fast refresh rate display and smooth performance."
     },
     {
         "name": "Dell XPS 13",
-        "image": "xps13.jpg",
+        "image": "https://i.ibb.co/SmBxV9S/dell-xps-13.webp",
         "brand": "Dell",
         "type": "laptop",
         "description": "The Dell XPS 13 is a premium ultrabook known for its compact design and high-resolution display."
     },
     {
         "name": "MacBook Air",
-        "image": "macbookair.jpg",
+        "image": "https://i.ibb.co/GJ58xJh/mack-Boook.webp",
         "brand": "Apple",
         "type": "laptop",
         "description": "The MacBook Air is a thin and lightweight laptop with Apple's M1 chip for improved performance."
     },
     {
-        "name": "Lenovo ThinkPad X1 Carbon",
-        "image": "thinkpadx1.jpg",
+        "name": "Lenovo ThinkPad X1",
+        "image": "https://i.ibb.co/qrVqTx1/Lenovo-Think-Pad-X1-Carbon.jpg",
         "brand": "Lenovo",
         "type": "laptop",
-        "description": "The ThinkPad X1 Carbon is a business-oriented ultrabook with a durable build and excellent keyboard."
+        "description": "The ThinkPad X1 Carbon is a business-oriented ultrabook with a durable build."
     },
     {
         "name": "HP Spectre x360",
-        "image": "spectrex360.jpg",
+        "image": "https://i.ibb.co/MBHF8gw/HP-Spectre-x360.webp",
         "brand": "HP",
         "type": "laptop",
         "description": "The HP Spectre x360 is a versatile 2-in-1 laptop with a sleek design and a touchscreen display."
     },
     {
-        "name": "Anker PowerCore 26800",
-        "image": "powercore26800.jpg",
+        "name": "Anker PowerCore",
+        "image": "https://i.ibb.co/v4zMcbS/Anker-Power-Core-26800.jpg",
         "brand": "Anker",
         "type": "battery",
         "description": "The Anker PowerCore 26800 is a high-capacity power bank for charging laptops and devices on the go."
     },
     {
         "name": "RAVPower 20000mAh Power Bank",
-        "image": "ravpower20000.jpg",
+        "image": "https://i.ibb.co/HGNJs4C/RAVPower-20000m-Ah-Power-Bank.webp",
         "brand": "RAVPower",
         "type": "battery",
         "description": "The RAVPower 20000mAh power bank offers fast charging and multiple device compatibility."
     },
     {
         "name": "Samsung EB-BN910BBE Battery",
-        "image": "samsungbattery.jpg",
+        "image": "https://i.ibb.co/PjcFnR5/Samsung-EB-BN910-BBE-Battery.png",
         "brand": "Samsung",
         "type": "battery",
         "description": "The Samsung EB-BN910BBE is a replacement battery for compatible Samsung laptops."
     },
     {
         "name": "Dell 97WH 6-Cell Battery",
-        "image": "dellbattery.jpg",
+        "image": "https://i.ibb.co/ZS4nBd1/Dell-97-WH-6-Cell-Battery.webp",
         "brand": "Dell",
         "type": "battery",
         "description": "The Dell 97WH 6-Cell Battery is a genuine replacement battery for Dell laptops."
     },
     {
-        "name": "Dell Ultrasharp U2719D",
-        "image": "dellmonitor.jpg",
+        "name": "Dell Ultrasharp",
+        "image": "https://i.ibb.co/h9Xqy1J/Dell-Ultrasharp-U2719-D.jpg",
         "brand": "Dell",
-        "type": "battery",
+        "type": "monitor",
         "description": "The Dell Ultrasharp U2719D is a high-resolution IPS monitor with excellent color accuracy."
     },
     {
         "name": "LG 27GL83A-B",
-        "image": "lgmonitor.jpg",
+        "image": "https://i.ibb.co/q9kmw1X/LG-27-GL83-A-B1.png",
         "brand": "LG",
         "type": "monitor",
         "description": "The LG 27GL83A-B is a gaming monitor with a fast refresh rate and G-Sync compatibility."
     },
     {
-        "name": "ASUS ProArt PA329C",
-        "image": "asusmonitor.jpg",
+        "name": "ASUS ProArt",
+        "image": "https://i.ibb.co/3c1BDnj/ASUS-Pro-Art-PA329-C.png",
         "brand": "ASUS",
         "type": "monitor",
         "description": "The ASUS ProArt PA329C is a professional-grade 4K monitor for content creators."
     },
     {
         "name": "BenQ GW2270",
-        "image": "benqmonitor.jpg",
+        "image": "https://i.ibb.co/gWskKmK/Ben-Q-GW2270.jpg",
         "brand": "BenQ",
         "type": "monitor",
         "description": "The BenQ GW2270 is an affordable monitor with a high contrast ratio for multimedia use."
     },
     {
         "name": "HP LaserJet Pro MFP M281fdw",
-        "image": "hplaserjet.jpg",
+        "image": "https://i.ibb.co/Fk1GZpd/HP-Laser-Jet-Pro-MFP-M281fdw.jpg",
         "brand": "HP",
         "type": "printer",
         "description": "The HP LaserJet Pro MFP M281fdw is a multifunction laser printer with wireless printing capabilities."
     },
     {
         "name": "Epson EcoTank ET-4760",
-        "image": "epsonecotank.jpg",
+        "image": "https://i.ibb.co/Gk3WtsB/Epson-Eco-Tank-ET-4760.jpg",
         "brand": "Epson",
         "type": "printer",
         "description": "The Epson EcoTank ET-4760 features refillable ink tanks for cost-effective printing."
     },
     {
         "name": "Canon PIXMA MX922",
-        "image": "canonpixma.jpg",
+        "image": "https://i.ibb.co/8gZr5dM/Canon-PIXMA-MX922.jpg",
         "brand": "Canon",
         "type": "printer",
         "description": "The Canon PIXMA MX922 is a versatile all-in-one inkjet printer for home and office use."
     },
     {
         "name": "Brother HL-L2380DW",
-        "image": "brotherprinter.jpg",
+        "image": "https://i.ibb.co/wNszr3C/Brother-HL-L2380-DW.webp",
         "brand": "Brother",
         "type": "printer",
         "description": "The Brother HL-L2380DW is a monochrome laser printer with wireless and duplex printing."
     },
     {
         "name": "Sony WH-1000XM4",
-        "image": "sonyheadphones.jpg",
+        "image": "https://i.ibb.co/WWQzH1w/Sony-WH-1000-XM4a.jpg",
         "brand": "Sony",
         "type": "headphones",
         "description": "The Sony WH-1000XM4 offers premium sound quality and noise-canceling technology."
     },
     {
-        "name": "Bose QuietComfort 35 II",
-        "image": "boseheadphones.jpg",
+        "name": "Bose QuietComfort",
+        "image": "https://i.ibb.co/jfG2tMS/Bose-Quiet-Comfort-35-II.jpg",
         "brand": "Bose",
         "type": "headphones",
         "description": "The Bose QuietComfort 35 II is known for its comfort and noise cancellation."
     },
     {
         "name": "Beats Solo Pro",
-        "image": "beatssolo.jpg",
+        "image": "https://i.ibb.co/Snn4z9g/Beats-Solo-Pro.jpg",
         "brand": "Beats",
         "type": "headphones",
         "description": "The Beats Solo Pro offers a sleek design and Apple's H1 chip for seamless connectivity."
     },
     {
         "name": "Sennheiser HD 660 S",
-        "image": "sennheiserheadphones.jpg",
+        "image": "https://i.ibb.co/P94tcbt/Sennheiser-HD-660-S.jpg",
         "brand": "Sennheiser",
         "type": "headphones",
         "description": "The Sennheiser HD 660 S provides high-quality sound for audiophiles."
     },
     {
-        "name": "Apple Watch Series 6",
-        "image": "applewatch.jpg",
+        "name": "Apple Watch Series6",
+        "image": "https://i.ibb.co/Dtk57Nc/Apple-Watch-Series-6.jpg",
         "brand": "Apple",
         "type": "smartwatch",
         "description": "The Apple Watch Series 6 features a blood oxygen sensor, ECG, and Always-On Retina display."
     },
     {
-        "name": "Samsung Galaxy Watch 4",
-        "image": "galaxywatch.jpg",
+        "name": "Samsung Galaxy W4",
+        "image": "https://i.ibb.co/x7NRffd/Samsung-Galaxy-Watch-4.webp",
         "brand": "Samsung",
         "type": "smartwatch",
         "description": "The Samsung Galaxy Watch 4 offers health and fitness tracking and a variety of apps."
     },
     {
         "name": "Fitbit Versa 3",
-        "image": "fitbitversa.jpg",
+        "image": "https://i.ibb.co/zXDxdvM/Fitbit-Versa-3.jpg",
         "brand": "Fitbit",
         "type": "smartwatch",
         "description": "The Fitbit Versa 3 is designed for fitness enthusiasts with GPS and heart rate monitoring."
     },
     {
-        "name": "Garmin Forerunner 945",
-        "image": "garminwatch.jpg",
+        "name": "Garmin Forerunner",
+        "image": "https://i.ibb.co/yY96vC9/Garmin-Forerunner-945.png",
         "brand": "Garmin",
-        "type": "smartWatch",
+        "type": "smartwatch",
         "description": "The Garmin Forerunner 945 is built for serious athletes with advanced performance metrics."
     },
     {
-        "name": "Canon EOS 5D Mark IV",
-        "image": "canoncamera.jpg",
+        "name": "Canon EOS 5D Mark",
+        "image": "https://i.ibb.co/7Qbskd8/Canon-EOS-5-D-Mark-IV.jpg",
         "brand": "Canon",
         "type": "camera",
         "description": "The Canon EOS 5D Mark IV is a professional-grade DSLR camera with high-resolution imaging."
     },
     {
         "name": "Sony Alpha a7 III",
-        "image": "sonycamera.jpg",
+        "image": "https://i.ibb.co/m6jbyfg/Sony-Alpha-a7-III.jpg",
         "brand": "Sony",
         "type": "camera",
         "description": "The Sony Alpha a7 III is a versatile mirrorless camera with great low-light performance."
     },
     {
         "name": "Nikon D7500",
-        "image": "nikoncamera.jpg",
+        "image": "https://i.ibb.co/yqWqmPJ/Nikon-D7500.jpg",
         "brand": "Nikon",
         "type": "camera",
         "description": "The Nikon D7500 is a mid-range DSLR camera with fast continuous shooting."
     },
     {
-        "name": "Panasonic Lumix GH5",
-        "image": "panasoniccamera.jpg",
+        "name": "Panasonic Lumix",
+        "image": "https://i.ibb.co/C7tG6h5/Panasonic-Lumix-GH5.jpg",
         "brand": "Panasonic",
         "type": "camera",
         "description": "The Panasonic Lumix GH5 is known for its video recording capabilities and versatility."

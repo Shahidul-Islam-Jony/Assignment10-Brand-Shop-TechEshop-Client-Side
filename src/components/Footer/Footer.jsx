@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Footer = () => {
+    const {darkMode} = useContext(AuthContext);
     return (
         <div className="mt-16">
-            <footer className="footer p-10 bg-neutral text-neutral-content">
+            <footer className={`footer p-10 text-neutral-content rounded-md ${darkMode?"bg-[#40304d]":"bg-neutral"}`}>
                 <nav>
                     <header className="footer-title">Services</header>
                     <a className="link link-hover">Top Brand</a>

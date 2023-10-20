@@ -4,10 +4,13 @@ import {BsCamera, BsPrinter } from 'react-icons/bs';
 import {ImHeadphones } from 'react-icons/im';
 import {IoWatchOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from "../../provider/AuthProvider";
 
 const FeaturedCategory = () => {
+    const {darkMode} = useContext(AuthContext);
     return (
-        <div className="w-11/12 mx-auto mt-20 bg-base-300 py-10 rounded-md">
+        <div className={`w-11/12 mx-auto mt-20 py-10 rounded-md ${darkMode?"dark":"bg-base-300"}`}>
             <div className="mb-10">
                 <h2 className="text-4xl font-bold text-center">Featured Category</h2>
                 <p className="text-xl text-center font-medium">Get Your Desired Product from Featured Category!</p>
@@ -26,7 +29,7 @@ const FeaturedCategory = () => {
                         <p className='text-xl font-medium'>Laptop</p>
                     </div>
                 </Link>
-                <Link to="/category/laptopBattery">
+                <Link to="/category/battery">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><FaCarBattery></FaCarBattery></p>
                         <p className='text-xl font-medium'>Laptop Battery</p>
@@ -45,13 +48,13 @@ const FeaturedCategory = () => {
                         <p className='text-xl font-medium'>Printer</p>
                     </div>
                 </Link>
-                <Link to="/category/headphone">
+                <Link to="/category/headphones">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><ImHeadphones></ImHeadphones></p>
                         <p className='text-xl font-medium'>Headphone</p>
                     </div>
                 </Link>
-                <Link to="/category/smartWatch">
+                <Link to="/category/smartwatch">
                     <div className='h-36 w-56  flex flex-col justify-center items-center bg-base-100 rounded-lg'>
                         <p className='text-7xl'><IoWatchOutline></IoWatchOutline></p>
                         <p className='text-xl font-medium'>Smart watch</p>

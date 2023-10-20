@@ -1,8 +1,12 @@
-# React + Vite
+# About my projects
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* ### You can see brand products of Technology and Electronics.
+* ### You can create account and buy products.
+* ### If you logged in you can add and update products
+* ### You can Troggle dark and light theme
+* ### You can see Latest Products of top brands
 
-Currently, two official plugins are available:
+****
+***
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Live Link of Site : https://assignment10-client-side.web.app/
